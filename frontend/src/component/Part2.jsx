@@ -3,6 +3,7 @@ import rabbit from "../svg/rabbit.svg";
 import partner from "../svg/partner.svg";
 import male from "../svg/male.svg";
 import event_add from "../svg/event_add.svg";
+import drop from "../svg/drop.svg";
 import female from "../svg/female.svg";
 import pattern from "../svg/Pattern.svg";
 import logo from "../svg/logo.svg";
@@ -10,7 +11,6 @@ import vector from "../svg/Vector.svg";
 import group1 from "../svg/Group1.svg";
 import group2 from "../svg/Group2.svg";
 import mail from "../svg/mail.svg";
-import drop from "../svg/drop.svg";
 import { ReactComponent as Ring } from "../svg/Ring.svg"
 import { ReactComponent as Glass } from "../svg/Glass.svg"
 import { ReactComponent as Heart } from "../svg/Heart.svg"
