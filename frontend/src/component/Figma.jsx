@@ -35,25 +35,32 @@ const Figma = () => {
   const styles = {
     paperContainer: {
       backgroundImage: `url(${pattern})`,
-      width: "378.61px",
+      width: "350.61px",
       height: "200px",
       marginTop: "20px",
       borderRadius: "20px",
       padding: "20px",
+    
      
-      elevation:0
     },
   };
   return (
     <>
-      <Box sx={{ backgroundColor: "#feefe4", margin:"auto",width:{md:"1440px"} }}>
+      <Box
+        sx={{
+          backgroundColor: "#feefe4",
+          margin: "auto",
+          width: { md: "1440px" },
+        }}
+      >
         <Box
           component="img"
           sx={{
             height: 442,
-            width: 1000,
+            width: {xs:"200px", sm:"600px", md: "1000px" },
             position: "absolute",
-            marginLeft: "500px",
+            marginLeft: {xs:"0", sm:"100px", md:"500px"},
+            opacity:"0.5"
           }}
           alt="The house from the offer."
           src={group1}
@@ -62,50 +69,78 @@ const Figma = () => {
           component="img"
           sx={{
             height: 402,
-            width: 900,
+            width: {xs:"200px", sm:"600px", md:"900px"},
             position: "absolute",
             marginTop: "520px",
+            opacity:"0.5"
+
           }}
           alt="The house from the offer."
           src={group2}
           
         />
 
-        <Stack direction="row" sx={{ justifyContent: "space-between",padding:{md:"20px"} }}>
-          <Stack direction="row" sx={{ gap: "20px"}}>
-            <Avatar src={rabbit} sx={{width:"25px",height:"25px",marginTop:"10px"}} />
-            <Typography sx={{marginTop:"10px"}}>Datify</Typography>
+        <Stack
+          direction="row"
+          sx={{ justifyContent: "space-between", padding: { md: "20px" } }}
+        >
+          <Stack direction="row" sx={{ gap: "20px" }}>
+            <Avatar
+              src={rabbit}
+              sx={{ width: "25px", height: "25px", marginTop: "10px" }}
+            />
+            <Typography sx={{ marginTop: "10px" }}>Datify</Typography>
           </Stack>
-          <Stack direction="row" sx={{ gap: "50px", margin: "auto" }}>
+          <Stack direction="row" sx={{ gap: {sm:"20px" ,md:"50px"},display:{xs:"none",sm:"inline-flex"}, margin: "auto" }}>
             <Typography
-               
-                sx={{ fontSize: "16px", color: "#ED9B59", gap: "20px",fontWeight:"700" }}
+              sx={{
+                fontSize: "16px",
+                color: "#ED9B59",
+                gap: { md:"20px"},
+                fontWeight: "700",
+              }}
             >
               Home
             </Typography>
-            <Typography   sx={{
+            <Typography
+              sx={{
                 fontWeight: "700",
                 fontSize: "16px",
                 color: "#7D8790",
-              }}>Member</Typography>
-            <Typography   sx={{
+              }}
+            >
+              Member
+            </Typography>
+            <Typography
+              sx={{
                 fontWeight: "700",
                 fontSize: "16px",
                 color: "#7D8790",
-              }}>Blog</Typography>
-            <Typography   sx={{
+              }}
+            >
+              Blog
+            </Typography>
+            <Typography
+              sx={{
                 fontWeight: "700",
                 fontSize: "16px",
                 color: "#7D8790",
-              }}>Privacy</Typography>
-            <Typography   sx={{
+              }}
+            >
+              Privacy
+            </Typography>
+            <Typography
+              sx={{
                 fontWeight: "700",
                 fontSize: "16px",
                 color: "#7D8790",
-              }}>Contact</Typography>
+              }}
+            >
+              Contact
+            </Typography>
           </Stack>
 
-          <Stack direction="row" sx={{ gap: "50px", marginTop:"10px" }}>
+          <Stack direction="row" sx={{ gap: "50px", marginTop: "10px" }}>
             <Typography
               sx={{
                 fontWeight: "700",
@@ -129,8 +164,14 @@ const Figma = () => {
           </Stack>
         </Stack>
 
-        <Stack direction="row">
-          <Box sx={{ width: {md:"45%"},paddingLeft:{md:"20px"}, marginTop: "100px" }}>
+        <Stack direction={{ sm: "column", md: "row" }}>
+          <Box
+            sx={{
+              width: { md: "45%" },
+              paddingLeft: { md: "20px" },
+              marginTop: "100px",
+            }}
+          >
             <Typography variant="subheading1" sx={{ color: "#ED9B59" }}>
               Because you deserve better!
             </Typography>
@@ -138,7 +179,8 @@ const Figma = () => {
               variant="h2"
               sx={{ fontWeight: "600", marginBottom: "30px" }}
             >
-              Get noticed for <span className="colorChange" >who</span> you are, <span className="colorChange" >not what</span> you look like.
+              Get noticed for <span className="colorChange">who</span> you are,{" "}
+              <span className="colorChange">not what</span> you look like.
             </Typography>
             <Typography variant="body1" sx={{ marginBottom: "30px" }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
@@ -151,10 +193,7 @@ const Figma = () => {
               direction="row"
               sx={{
                 alignItems: "center",
-                width: {
-                  sm:"300px",
-                  md:"515px"
-                },
+                width:"515px",
                 height: "60px",
                 background: "#FFFFFF",
                 borderRadius: "40px",
@@ -165,7 +204,7 @@ const Figma = () => {
                 src={mail}
                 sx={{ width: "25px", padding: "20px", paddingTop: "35px" }}
               ></Avatar>
-              <Box sx={{ width: {md:"310px"} }}>
+              <Box sx={{ width: "310px"  }}>
                 <Typography>Enter Your Name</Typography>
               </Box>
 
@@ -213,41 +252,62 @@ const Figma = () => {
             </Stack>
           </Box>
           <Box>
+          
+            <Box>
             <Thumb className="thumb" />
             <Ring className="ring" />
             <Glass className="glass" />
             <Heart className="heart" />
-            <Box>
               <Box
                 component="img"
                 alt="The house from the offer."
                 src={partner}
-               sx={{width:{
-                md:"651px"
-               }}}
+                sx={{
+                  width: {
+                    xs:"490px",
+                    sm: "550px",
+                    md: "651px",
+                  },
+                  position: "absolute",
+                }}
               />
             </Box>
+            <CardMedia
+              component="img"
+              sx={{
+                width: { md: "920px" },
+
+                marginTop: "250px",
+                marginLeft: "-12px",
+              }}
+              image={vector}
+              alt=""
+            />
           </Box>
           <Stack
             direction="row"
             position="absolute"
-            sx={{ marginLeft:{sm:"430px",md: "650px"}, marginTop: "560px", width: {md:"800px"} }}
+            sx={{
+              marginLeft: { sm: "0px", md: "650px" },
+              marginTop: {xs:"1100px", sm: "1150px", md: "560px" },
+              width: { md: "800px" },
+            }}
           >
-            <Box sx={{ width: {md:"400px"} }}>
+            <Box sx={{ width: { md: "400px" } }}>
               <Grid
                 container
                 direction="row"
-                sx={{ gap: "10px", width: {md:"500px"} }}
+                sx={{ gap: "10px", width: { sm: "250px", md: "500px" } }}
               >
                 <Box
                   display="flex"
                   sx={{
-                    width: "123px",
+                    width: { md: "123px" },
                     height: "44px",
                     background: "#FFFFFF",
                     boxShadow: "-20px 14px 24px rgba(0, 0, 0, 0.05)",
                     backdropFilter: "blur(15px)",
-
+                    paddingRight: "10px",
                     borderRadius: " 10px",
                   }}
                 >
@@ -266,10 +326,11 @@ const Figma = () => {
                 <Box
                   display="flex"
                   sx={{
-                    width: "123px",
+                    width: { md: "123px" },
                     height: "44px",
                     background: "#F59B5A",
                     borderRadius: "10px",
+                    paddingRight: "10px",
                   }}
                 >
                   <Avatar
@@ -282,6 +343,7 @@ const Figma = () => {
                       color: "white",
                       paddingTop: "10px",
                       fontSize: "18px",
+                      paddingRight: "10px",
                     }}
                   >
                     13.11.22
@@ -291,12 +353,13 @@ const Figma = () => {
                 <Box
                   display="flex"
                   sx={{
-                    width: "123px",
+                    width: { md: "123px" },
                     height: "44px",
                     background: "#FFFFFF",
                     boxShadow: "-20px 14px 24px rgba(0, 0, 0, 0.05)",
                     backdropFilter: "blur(15px)",
                     borderRadius: "10px",
+                    paddingRight: "10px",
                   }}
                 >
                   <Avatar
@@ -313,11 +376,12 @@ const Figma = () => {
               </Grid>
               <Card
                 sx={{
-                  display: "flex",
-                  width: {md:"365px"},
-                  height: "98px",
+                  display: {xs:"none",md:"flex"},
+                  width: { md: "365px" },
+                  height: { sm: "78px", md: "98px" },
                   marginTop: "30px",
                   justifyContent: "space-between",
+                  
                 }}
               >
                 <Box display="flex" sx={{ padding: "10px" }}>
@@ -335,7 +399,7 @@ const Figma = () => {
 
                 <Button
                   sx={{
-                    width: {md:"76px"},
+                    width: { md: "76px" },
                     height: "44px",
                     background: "#F59B5A",
                     bordeRrRadius: "10px",
@@ -349,7 +413,7 @@ const Figma = () => {
               </Card>
               <Card
                 sx={{
-                  display: "flex",
+                  display: {xs:"none",md:"flex"},
                   width: "365px",
                   height: "98px",
                   marginTop: "30px",
@@ -385,13 +449,13 @@ const Figma = () => {
               </Card>
             </Box>
 
-            <Card>
-              <Paper style={styles.paperContainer} >
-               
+            <Box>
+              <Paper style={styles.paperContainer}>
                 <Avatar
                   src={logo}
-                  sx={{ border: "2px solid black", marginBottom: "30px" }}
+                  sx={{  marginBottom: "30px" }}
                 ></Avatar>
+        
                 <Typography variant="body1">CARD NUMBER</Typography>
                 <Typography
                   variant="body1"
@@ -420,24 +484,9 @@ const Figma = () => {
                     <Typography variant="h6">09/25</Typography>
                   </Box>
                 </Stack>
-               
-               
               </Paper>
-            </Card>
+            </Box>
           </Stack>
-
-          <CardMedia
-            component="img"
-            sx={{
-              width: {md:"920px"},
-              position: "absolute",
-              marginLeft: "518px",
-              marginTop: "250px",
-              opacity: "0.6",
-            }}
-            image={vector}
-            alt=""
-          />
         </Stack>
       </Box>
     </>
