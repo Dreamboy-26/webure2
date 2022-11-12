@@ -397,14 +397,13 @@ width: 703.5px;
 /* left: 584.5px; */
 top: 500.15px;
 
-/* opacity: 0.2; */
+opacity: 0.5;
 /* transform: rotate(-180deg); */
 }
 
 .inputDiv{
   width: 515px;
 height: 68px;
-
 margin: auto;
 background: #FFFFFF;
 border-radius: 40px;
