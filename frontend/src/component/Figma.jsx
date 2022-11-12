@@ -46,7 +46,7 @@ const Figma = () => {
   };
   return (
     <>
-      <Box sx={{ backgroundColor: "#feefe4" }}>
+      <Box sx={{ backgroundColor: "#feefe4", margin:"auto",width:{md:"1440px"} }}>
         <Box
           component="img"
           sx={{
@@ -71,7 +71,7 @@ const Figma = () => {
           
         />
 
-        <Stack direction="row" sx={{ justifyContent: "space-between" }}>
+        <Stack direction="row" sx={{ justifyContent: "space-between",padding:{md:"20px"} }}>
           <Stack direction="row" sx={{ gap: "20px"}}>
             <Avatar src={rabbit} sx={{width:"25px",height:"25px",marginTop:"10px"}} />
             <Typography sx={{marginTop:"10px"}}>Datify</Typography>
@@ -130,7 +130,7 @@ const Figma = () => {
         </Stack>
 
         <Stack direction="row">
-          <Box sx={{ width: "45%", marginTop: "100px" }}>
+          <Box sx={{ width: {md:"45%"},paddingLeft:{md:"20px"}, marginTop: "100px" }}>
             <Typography variant="subheading1" sx={{ color: "#ED9B59" }}>
               Because you deserve better!
             </Typography>
@@ -138,7 +138,7 @@ const Figma = () => {
               variant="h2"
               sx={{ fontWeight: "600", marginBottom: "30px" }}
             >
-              Get noticed for who you are, not what you look like.
+              Get noticed for <span className="colorChange" >who</span> you are, <span className="colorChange" >not what</span> you look like.
             </Typography>
             <Typography variant="body1" sx={{ marginBottom: "30px" }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
@@ -151,7 +151,10 @@ const Figma = () => {
               direction="row"
               sx={{
                 alignItems: "center",
-                width: "515px",
+                width: {
+                  sm:"300px",
+                  md:"515px"
+                },
                 height: "60px",
                 background: "#FFFFFF",
                 borderRadius: "40px",
@@ -162,7 +165,7 @@ const Figma = () => {
                 src={mail}
                 sx={{ width: "25px", padding: "20px", paddingTop: "35px" }}
               ></Avatar>
-              <Box sx={{ width: "310px" }}>
+              <Box sx={{ width: {md:"310px"} }}>
                 <Typography>Enter Your Name</Typography>
               </Box>
 
@@ -219,19 +222,22 @@ const Figma = () => {
                 component="img"
                 alt="The house from the offer."
                 src={partner}
+               sx={{width:{
+                md:"651px"
+               }}}
               />
             </Box>
           </Box>
           <Stack
             direction="row"
             position="absolute"
-            sx={{ marginLeft: "680px", marginTop: "560px", width: "800px" }}
+            sx={{ marginLeft:{sm:"430px",md: "650px"}, marginTop: "560px", width: {md:"800px"} }}
           >
-            <Box sx={{ width: "400px" }}>
+            <Box sx={{ width: {md:"400px"} }}>
               <Grid
                 container
                 direction="row"
-                sx={{ gap: "10px", width: "500px" }}
+                sx={{ gap: "10px", width: {md:"500px"} }}
               >
                 <Box
                   display="flex"
@@ -308,7 +314,7 @@ const Figma = () => {
               <Card
                 sx={{
                   display: "flex",
-                  width: "365px",
+                  width: {md:"365px"},
                   height: "98px",
                   marginTop: "30px",
                   justifyContent: "space-between",
@@ -317,7 +323,7 @@ const Figma = () => {
                 <Box display="flex" sx={{ padding: "10px" }}>
                   <CardMedia
                     component="img"
-                    sx={{ width: "77px", height: "77px", marginRight: "20px" }}
+                    sx={{ width: "77px", marginRight: "20px" }}
                     image={female}
                     alt=""
                   />
@@ -329,7 +335,7 @@ const Figma = () => {
 
                 <Button
                   sx={{
-                    width: "76px",
+                    width: {md:"76px"},
                     height: "44px",
                     background: "#F59B5A",
                     bordeRrRadius: "10px",
@@ -423,10 +429,10 @@ const Figma = () => {
           <CardMedia
             component="img"
             sx={{
-              width: "1000px",
+              width: {md:"920px"},
               position: "absolute",
               marginLeft: "518px",
-              marginTop: "200px",
+              marginTop: "250px",
               opacity: "0.6",
             }}
             image={vector}
