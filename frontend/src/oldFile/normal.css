@@ -1,0 +1,450 @@
+/* .navbar{
+
+  display: flex;
+  justify-content: space-between;
+}
+.cName{
+  font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+color: #1A1D32;
+}
+
+.left{
+display: flex;
+padding-top: 43px;
+gap: 20px;
+padding-left: 40px;
+}
+
+.middle{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  padding-top: 43px;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+
+color: #ED9B59;
+}
+
+.middleItem{
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+
+text-align: center;
+display: flex;
+color: #7D8790;
+
+}
+
+.right{
+  display: flex;
+  gap: 10px;
+
+  width: 310px;
+  
+
+}
+
+.login{
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+
+text-align: center;
+display: flex;
+color: #7D8790;
+padding-top: 53px;
+
+}
+
+.registerButton{
+  background: #ED9B59;
+  border: none;
+box-shadow: 0px 100px 161px rgba(245, 155, 90, 0.08), 0px 64.8148px 94.2894px rgba(245, 155, 90, 0.0607407), 0px 38.5185px 51.2815px rgba(245, 155, 90, 0.0485926), 0px 20px 26.1625px rgba(245, 155, 90, 0.04), 0px 8.14815px 13.1185px rgba(245, 155, 90, 0.0314074), 0px 1.85185px 6.33565px rgba(245, 155, 90, 0.0192593);
+border-radius: 40px;
+position: absolute;
+width: 146px;
+height: 52px;
+left: 1220px;
+top: 37px;
+color: #F4EBE6;
+}
+
+
+.leftSide{
+ 
+  padding-left: 40px;
+  width: 45%;
+  margin-top: 100px;
+
+}
+
+
+.mainPoint{
+  font-family: 'Google Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 58px;
+line-height: 101.8%;
+
+letter-spacing: -0.01em;
+
+color: #1A1D32;
+
+}
+
+.mainPointDiv{
+  width: 583px;
+height: 177px;
+left: 71px;
+top: 244px;
+}
+
+
+
+.detailedPoint{
+  font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+
+
+color: #1A1D32;
+
+opacity: 0.7;
+}
+
+
+.likesViews{
+  justify-content: space-between;
+  display: flex;
+  width: 550px;
+}
+
+.smallQuote{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ED9B59;
+}
+.dateMatches{
+  font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 71px;
+letter-spacing: -4px;
+
+color: #1A1D32;
+}
+
+
+.newMembers{
+ 
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 71px;
+  letter-spacing: -4px;
+  
+  color: #B35E21;
+}
+
+.worldMembers{
+  
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 71px;
+letter-spacing: -4px;
+
+color: #1A1D32;
+}
+
+
+
+
+.rightSide{
+  width: 65%;  
+}
+
+.partner{
+  position: absolute;
+}
+.info{
+  display: flex;
+
+  position: relative;
+  justify-content: space-between;
+}
+
+.gender{
+  display: flex;
+  width: 123px;
+height: 44px;
+
+gap: 10px;
+background: #FFFFFF;
+box-shadow: -20px 14px 24px rgba(0, 0, 0, 0.05);
+backdrop-filter: blur(15px);
+border-radius: 10px;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px; 
+text-align: center;
+color: #F59B5A;
+
+}
+
+.calender{
+  
+
+  width: 123px;
+  height: 44px;
+  display: flex;
+
+  background: #F59B5A;
+  border-radius: 10px;
+  gap: 10px;
+  color: white;
+}
+
+.location{
+gap: 10px;
+color:#F59B5A;
+  width: 123px;
+  height: 44px;
+  display: flex;
+  background: #FFFFFF;
+  box-shadow: -20px 14px 24px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(15px);  
+  border-radius: 10px;
+}
+
+.infoText{
+  margin-top: 8px;
+}
+
+.rightInfoDiv{
+
+  width: 398px;
+  height: 294px;
+}
+
+.selectPartner{
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  padding-left: 10px;
+  padding-right: 10px;
+height: 98px;
+margin-top: 40px;
+align-items: center;
+background: #FFFFFF;
+backdrop-filter: blur(15px);
+border-radius: 10px;
+}
+
+.card{
+  width: 400px;
+ 
+height: 254px;
+  position: relative;
+  background-repeat: no-repeat;
+  margin: 15px;
+  background-image:url("./svg/Pattern.svg");
+padding-top: 30px;
+padding-left: 30px;
+padding-bottom: 30px;
+opacity: 2;
+}
+
+.part2{
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.selectButton{
+  width: 76px;
+height: 44px;
+
+background: #F59B5A;
+border-radius: 10px;
+border: none;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+
+
+
+color: #FFFFFF;
+
+}
+.imageName{
+  display: flex;
+  gap: 30px;
+}
+
+.selectName{
+  font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+
+
+
+color: #333333;
+}
+.selectLocation{
+margin-top: -10px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+
+
+
+color: #333333;
+
+opacity: 0.5;
+}
+
+.rightInfoMainDiv{
+  position: absolute;
+  margin-top: 565px;
+  display: flex;
+
+
+}
+.likeViewText{
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+width: 150px;
+margin-top: -30px;
+
+
+
+color: #1A1D32;
+
+}
+
+.nameThru{
+  display: flex;
+ gap: 100px;
+}
+
+.backgroundVector{
+ 
+  margin-left: 547px;
+  margin-top: 270px;
+}
+
+.topBackstick{
+  position: absolute;
+width: 1133.5px;
+height: 442.15px;
+left: 350px;
+top: -58px;
+
+
+}
+
+.bottomBackStick{
+  position: absolute;
+width: 703.5px;
+
+top: 500.15px;
+
+opacity: 0.5;
+
+}
+
+.inputDiv{
+  width: 515px;
+height: 68px;
+margin: auto;
+background: #FFFFFF;
+border-radius: 40px;
+align-items: center;
+align-content: center;
+display: flex;
+margin-left: 0px;
+margin-bottom: 60px;
+}
+
+.inputButton{
+  width: 180px;
+height: 50px;
+left: 396px;
+top: 608px;
+
+background: #ED9B59;
+box-shadow: 0px 100px 161px rgba(245, 155, 90, 0.08), 0px 64.8148px 94.2894px rgba(245, 155, 90, 0.0607407), 0px 38.5185px 51.2815px rgba(245, 155, 90, 0.0485926), 0px 20px 26.1625px rgba(245, 155, 90, 0.04), 0px 8.14815px 13.1185px rgba(245, 155, 90, 0.0314074), 0px 1.85185px 6.33565px rgba(245, 155, 90, 0.0192593);
+border-radius: 40px;
+border: none;
+color: white;
+
+}
+
+
+.inputBox{
+  width: 270px;
+  height: 30px;
+  outline: none;
+  border: none;
+ 
+}
+
+.mailIcon{
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 11px;
+  
+}
+
+.cardPointers{
+  font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+
+text-transform: uppercase;
+
+color: #000000;
+
+mix-blend-mode: normal;
+opacity: 0.7;
+} */
+
+/* .cardDetails{
+  font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 31px;
+
+
+letter-spacing: 1.5px;
+margin-top: 0px;
+color: #000000;
+
+}
+.cardholder{
+  
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 21px;
+margin-top: 0;
+color: #000000;
+}
+ */
+
